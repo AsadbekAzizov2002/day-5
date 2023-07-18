@@ -1,0 +1,28 @@
+.start{
+    background: #F67E7E;
+    padding-top: 76px;
+    padding-bottom: 76px;
+    background-repeat: no-repeat;
+    background-image: url('../../img/start.svg');
+    background-position: left bottom;
+}
+.start_container{
+    display: flex;
+    justify-content: space-between;
+    max-width: 917px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.start__title{
+    max-width: 504px;
+    color: #012F34;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px; /* 100% */ 
+}
+.start__btn{
+    color: #012F34;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px; /* 155.556% */
+}

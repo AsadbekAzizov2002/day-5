@@ -1,0 +1,10 @@
+@mixin icon($url) {
+    content: " ";
+    width: 72px;
+    height: 72px;
+    flex-shrink: 0;
+    margin-right: 23px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-image: url("$url");
+}

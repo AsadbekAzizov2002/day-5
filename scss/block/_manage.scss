@@ -1,0 +1,109 @@
+.manage{
+    background-color: #012F34;
+    background-repeat:no-repeat;
+    background-image: url('../../img/manage.svg');
+    background-position: right bottom;
+    padding-top: 198px;
+    padding-bottom: 140px;
+}
+
+.manage__btn{
+    width: 50px;
+    margin-bottom: 54px;
+    height: 4px;
+    background-color: #F67E7E;
+}
+
+.manage__container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.manage_inner__title{
+    color: #F67E7E;
+    font-size: 18px;
+    max-width: 445px;
+    font-weight: 700;
+    line-height: 28px; /* 155.556% */
+}
+.manage__text{
+    max-width: 445px;
+    margin-bottom: 32px;
+    color: #FFF;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 25px; /* 166.667% */
+}
+
+.manage__title{
+    color: #FFF;
+    font-size: 48px;
+    max-width: 445px;
+    font-weight: 700;
+    line-height: 48px; /* 100% */
+}
+
+
+.manage__item{
+    display: flex;
+    align-items:start;
+    max-width: 507px;
+    
+   &::before{
+    @include icon ("../../img/icon1.svg")
+   }
+   &::before icon{
+    @include icon('../../img/icon2.svg')
+   }
+   &::before icon{
+    @include icon ("../../img/icon3.svg")
+   }
+}
+
+@media screen  and(max-width: 992px) {
+    .menage__container{
+        font-display: column;
+        align-items: start;
+    }
+    .manage__title{
+        margin-bottom: 64px;
+        color: #FFF;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 32px; /* 100% */
+    }
+    .manage{
+        background-position: right top;
+    }
+    .manage__item{
+        max-width: 543px;
+        margin-bottom: 32px;
+    }
+    .manage_inner__title{
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 28px; /* 155.556% */
+    }
+    .manage__text{
+        font-family: Livvic;
+        font-size: 15px;
+        line-height: 25px; /* 166.667% */
+        opacity: 0.800000011920929;
+    }
+}
+@media screen and (max-width:500px) {
+    .manage__item{
+        max-width: 324px;
+        font-size: 32px;
+        line-height: 32px;
+    }
+    .manage__item{
+        flex-direction: column;
+        text-align: center;
+
+        &::before{
+            margin: 0 auto;
+            
+        }
+    }
+}
