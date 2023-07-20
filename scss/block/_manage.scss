@@ -60,10 +60,10 @@
    }
 }
 
-@media screen  and(max-width: 992px) {
+@media screen and (max-width: 992px) {
     .menage__container{
         font-display: column;
-        align-items: start;
+    }
     }
     .manage__title{
         margin-bottom: 64px;
@@ -85,13 +85,15 @@
         line-height: 28px; /* 155.556% */
     }
     .manage__text{
-        font-family: Livvic;
         font-size: 15px;
         line-height: 25px; /* 166.667% */
         opacity: 0.800000011920929;
     }
-}
 @media screen and (max-width:500px) {
+.manage__container{
+    flex-direction: column;
+}
+
     .manage__item{
         max-width: 324px;
         font-size: 32px;

@@ -22,7 +22,22 @@
 }
 .start__btn{
     color: #012F34;
+    border-radius: 24px;
+    text-align: center;
+    align-items: center;
+    width: 153px;
+    height: 48px;
+    border: 2px solid #012F34;
     font-size: 18px;
     font-weight: 600;
     line-height: 28px; /* 155.556% */
+}
+@media screen and (max-width:992px){
+    .start_container{
+        flex-direction: column;
+    }
+    .start__title{
+        margin-bottom: 24px;
+        max-width: 327px;
+    }
 }

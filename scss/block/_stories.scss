@@ -1,0 +1,114 @@
+.restories{
+    padding-top: 140px;
+    padding-bottom: 140px;
+    background-color: #004047;
+    background-repeat:no-repeat;
+    background-image:url("../../img/real.svg"),
+    url("../../img/strories2.svg");
+    background-position: left top, right bottom;
+}
+.stories__title{
+    color: #FFF;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px; /* 100% */
+    margin-bottom: 92px;
+}
+
+.spn{
+    color: #79C8C7;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px;
+}
+.stories__title{
+    max-width: 932px;
+    color: #FFF;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px; /* 100% */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.stories__text{
+    max-width: 350px;
+    color: #FFF;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 25px; /* 166.667% */
+}
+.stories__list{
+    display: flex;
+    gap: 30px;
+}
+.stories__item{
+    max-width: 350px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+
+    &::before{
+        content: "";
+        width: 62px;
+        height: 62px;
+        display: block;
+        position: absolute;
+        background-repeat: no-repeat;
+        z-index: -1;
+        left: 50%;
+        transform: translateX(-50%);
+        top: -35px;
+        background-image: url(../../img/stories-icon.svg);
+    }
+
+}
+.user__block-name{
+    max-width: 350px;
+    color: #79C8C7;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px; /* 155.556% */
+}
+.user{
+    max-width: 350px;
+    color: #FFF;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 18px; /* 138.462% */
+    margin-bottom: 32px;
+}
+.user__block-img{
+    width: 62px;
+    height: 62px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.manage__list{
+    display: flex;
+    gap: 30px;
+}
+
+@media screen and (max-width: 992px) {
+    .stories__list{
+        flex-direction: column;
+        gap: 0;
+    }    
+    .stories__item{
+        max-width: 100%;
+
+        &:not(:last-child){
+            margin-bottom: 84px;
+
+        }
+        .stories__title{
+            font-size: 32px;
+            line-height: 32px;
+        }
+    }
+}
